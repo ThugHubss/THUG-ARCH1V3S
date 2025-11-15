@@ -1,1 +1,383 @@
-<script language=JavaScript> html='%3C%21DOCTYPE%20html%3E%0D%0A%3Chtml%20lang%3D%22en%22%3E%0D%0A%3Chead%3E%0D%0A%3Cmeta%20charset%3D%22UTF-8%22%20%2F%3E%0D%0A%3Cmeta%20name%3D%22viewport%22%20content%3D%22width%3Ddevice-width%2C%20initial-scale%3D1.0%22%20%2F%3E%0D%0A%0D%0A%3Ctitle%3EClips-Ops%20%E2%80%94%20Media%20Downloader%20Hub%3C%2Ftitle%3E%0D%0A%3Clink%20rel%3D%22canonical%22%20href%3D%22https%3A%2F%2Fclipsops.store%2F%22%20%2F%3E%0D%0A%3Clink%20rel%3D%22icon%22%20href%3D%22%2Ffavicon.ico%22%20type%3D%22image%2Fx-icon%22%20%2F%3E%0D%0A%0D%0A%3C%21--%20SEO%20%2B%20OpenGraph%20--%3E%0D%0A%3Cmeta%20property%3D%22og%3Atitle%22%20content%3D%22Clips-Ops%20%E2%80%94%20Media%20Downloader%20Hub%22%20%2F%3E%0D%0A%3Cmeta%20property%3D%22og%3Adescription%22%20content%3D%22Clips-Ops%20%E2%80%94%20Download%20videos%2C%20music%2C%20and%20media%20from%20all%20your%20favorite%20platforms%20instantly%20with%20style.%22%20%2F%3E%0D%0A%3Cmeta%20property%3D%22og%3Aimage%22%20content%3D%22https%3A%2F%2Ffiles.catbox.moe%2F6mlafu.jpg%22%20%2F%3E%0D%0A%3Cmeta%20property%3D%22og%3Aurl%22%20content%3D%22https%3A%2F%2Fclipsops.store%2F%22%20%2F%3E%0D%0A%3Cmeta%20name%3D%22keywords%22%20content%3D%22Clips-Ops%2C%20Media%20Downloader%2C%20Video%20Downloader%2C%20Music%20Downloader%2C%20Automation%2C%20Online%20Tools%22%20%2F%3E%0D%0A%3Cmeta%20name%3D%22description%22%20content%3D%22Clips-Ops%20%E2%80%94%20The%20ultimate%20hub%20to%20download%20media%20from%20YouTube%2C%20Instagram%2C%20Pinterest%2C%20and%20more.%22%20%2F%3E%0D%0A%3Cmeta%20name%3D%22author%22%20content%3D%22Clips-Ops%22%20%2F%3E%0D%0A%0D%0A%3C%21--%20Font%20--%3E%0D%0A%3Clink%20href%3D%22https%3A%2F%2Ffonts.googleapis.com%2Fcss2%3Ffamily%3DPress%2BStart%2B2P%26display%3Dswap%22%20rel%3D%22stylesheet%22%20%2F%3E%0D%0A%0D%0A%3Cstyle%3E%0D%0A%2F%2A%20%3D%3D%3D%3D%3D%20GLOBAL%20AESTHETIC%20%3D%3D%3D%3D%3D%20%2A%2F%0D%0Abody%20%7B%0D%0A%20%20background%3A%20%230f0f0f%3B%0D%0A%20%20color%3A%20%23dcdcdc%3B%0D%0A%20%20font-family%3A%20%27Press%20Start%202P%27%2C%20cursive%3B%0D%0A%20%20text-shadow%3A%200%200%203px%20rgba%28176%2C176%2C176%2C0.8%29%3B%0D%0A%20%20margin%3A%200%3B%0D%0A%20%20padding%3A%200%3B%0D%0A%20%20min-height%3A%20100vh%3B%0D%0A%20%20display%3A%20flex%3B%0D%0A%20%20flex-direction%3A%20column%3B%0D%0A%20%20align-items%3A%20center%3B%0D%0A%20%20justify-content%3A%20flex-start%3B%0D%0A%20%20position%3A%20relative%3B%0D%0A%7D%0D%0A%0D%0Abody%3A%3Abefore%20%7B%0D%0A%20%20content%3A%20%22%22%3B%0D%0A%20%20position%3A%20fixed%3B%0D%0A%20%20top%3A%200%3B%20left%3A%200%3B%0D%0A%20%20width%3A%20100%25%3B%20height%3A%20100%25%3B%0D%0A%20%20background%3A%20url%28%22https%3A%2F%2Fh.top4top.io%2Fp_3593sctri1.jpg%22%29%20no-repeat%20center%2Fcover%3B%0D%0A%20%20filter%3A%20blur%288px%29%20brightness%280.7%29%3B%0D%0A%20%20z-index%3A%20-1%3B%0D%0A%7D%0D%0A%0D%0Aheader%20%7B%0D%0A%20%20text-align%3A%20center%3B%0D%0A%20%20padding%3A%2040px%2020px%2010px%3B%0D%0A%7D%0D%0Aheader%20h1%20%7B%0D%0A%20%20color%3A%20%23fff%3B%0D%0A%20%20font-size%3A%201rem%3B%0D%0A%20%20margin-bottom%3A%2010px%3B%0D%0A%20%20text-shadow%3A%200%200%208px%20%2300ffcc%3B%0D%0A%7D%0D%0Aheader%20p%20%7B%0D%0A%20%20font-size%3A%200.55rem%3B%0D%0A%20%20color%3A%20%23aaa%3B%0D%0A%7D%0D%0A%0D%0A%2F%2A%20%3D%3D%3D%3D%3D%20CARDS%20%3D%3D%3D%3D%3D%20%2A%2F%0D%0A.api-list%20%7B%0D%0A%20%20display%3A%20grid%3B%0D%0A%20%20grid-template-columns%3A%20repeat%28auto-fit%2C%20minmax%28250px%2C%201fr%29%29%3B%0D%0A%20%20gap%3A%2020px%3B%0D%0A%20%20width%3A%2090%25%3B%0D%0A%20%20max-width%3A%201000px%3B%0D%0A%20%20margin%3A%2040px%20auto%3B%0D%0A%7D%0D%0A%0D%0A.api-card%20%7B%0D%0A%20%20background%3A%20rgba%28255%2C255%2C255%2C0.05%29%3B%0D%0A%20%20padding%3A%2020px%3B%0D%0A%20%20border-radius%3A%2012px%3B%0D%0A%20%20border%3A%201px%20solid%20%23333%3B%0D%0A%20%20box-shadow%3A%200%208px%2018px%20rgba%280%2C0%2C0%2C0.6%29%3B%0D%0A%20%20text-align%3A%20center%3B%0D%0A%20%20transition%3A%200.3s%20ease%3B%0D%0A%20%20position%3A%20relative%3B%0D%0A%7D%0D%0A.api-card%3Ahover%20%7B%0D%0A%20%20transform%3A%20translateY%28-4px%29%3B%0D%0A%20%20border-color%3A%20%2300ffcc%3B%0D%0A%7D%0D%0A.api-card%3A%3Aafter%20%7B%0D%0A%20%20content%3A%20%22%22%3B%0D%0A%20%20position%3A%20absolute%3B%0D%0A%20%20inset%3A%20-5px%3B%0D%0A%20%20border-radius%3A%2016px%3B%0D%0A%20%20box-shadow%3A%200%200%2025px%20rgba%280%2C255%2C127%2C0%29%3B%0D%0A%20%20opacity%3A%200%3B%0D%0A%20%20transition%3A%200.4s%20ease%3B%0D%0A%20%20pointer-events%3A%20none%3B%0D%0A%7D%0D%0A.api-card.active%3A%3Aafter%20%7B%0D%0A%20%20opacity%3A%201%3B%0D%0A%20%20box-shadow%3A%200%200%2040px%20var%28--glow-color%29%3B%0D%0A%7D%0D%0A.api-card%20img%20%7B%0D%0A%20%20width%3A%2060px%3B%0D%0A%20%20height%3A%2060px%3B%0D%0A%20%20border-radius%3A%2010px%3B%0D%0A%20%20image-rendering%3A%20pixelated%3B%0D%0A%7D%0D%0A.api-card%20h2%20%7B%0D%0A%20%20color%3A%20%23fff%3B%0D%0A%20%20font-size%3A%200.65rem%3B%0D%0A%20%20margin%3A%2010px%200%3B%0D%0A%7D%0D%0A.api-card%20p%20%7B%0D%0A%20%20color%3A%20%23ccc%3B%0D%0A%20%20font-size%3A%200.5rem%3B%0D%0A%20%20margin-bottom%3A%2012px%3B%0D%0A%7D%0D%0A%0D%0A%2F%2A%20Inputs%20%2A%2F%0D%0A.url-input%20%7B%0D%0A%20%20width%3A%2090%25%3B%0D%0A%20%20padding%3A%208px%3B%0D%0A%20%20font-size%3A%200.55rem%3B%0D%0A%20%20border-radius%3A%208px%3B%0D%0A%20%20border%3A%201px%20solid%20%23555%3B%0D%0A%20%20background%3A%20%23111%3B%0D%0A%20%20color%3A%20%23fff%3B%0D%0A%20%20text-align%3A%20center%3B%0D%0A%20%20margin-bottom%3A%2010px%3B%0D%0A%7D%0D%0A%0D%0A%2F%2A%20Buttons%20%2A%2F%0D%0A.btn%20%7B%0D%0A%20%20display%3A%20inline-block%3B%0D%0A%20%20font-size%3A%200.55rem%3B%0D%0A%20%20color%3A%20%23fff%3B%0D%0A%20%20background%3A%20linear-gradient%2890deg%2C%20%23555%2C%20%23888%29%3B%0D%0A%20%20border-radius%3A%206px%3B%0D%0A%20%20padding%3A%208px%2015px%3B%0D%0A%20%20margin%3A%205px%3B%0D%0A%20%20cursor%3A%20pointer%3B%0D%0A%7D%0D%0A.btn%3Ahover%20%7B%0D%0A%20%20transform%3A%20scale%281.05%29%3B%0D%0A%20%20background%3A%20linear-gradient%2890deg%2C%20%23777%2C%20%23aaa%29%3B%0D%0A%7D%0D%0A%0D%0A%2F%2A%20Footer%20%2A%2F%0D%0Afooter%20%7B%0D%0A%20%20margin%3A%2040px%200%2020px%3B%0D%0A%20%20text-align%3A%20center%3B%0D%0A%20%20font-size%3A%200.5rem%3B%0D%0A%20%20color%3A%20%23777%3B%0D%0A%7D%0D%0A%0D%0A%2F%2A%20%3D%3D%3D%3D%3D%20POPUP%20%3D%3D%3D%3D%3D%20%2A%2F%0D%0A.popup-overlay%20%7B%0D%0A%20%20display%3A%20none%3B%0D%0A%20%20position%3A%20fixed%3B%0D%0A%20%20top%3A%200%3B%20left%3A%200%3B%0D%0A%20%20width%3A%20100%25%3B%20height%3A%20100%25%3B%0D%0A%20%20background%3A%20rgba%280%2C0%2C0%2C0.8%29%3B%0D%0A%20%20backdrop-filter%3A%20blur%286px%29%3B%0D%0A%20%20z-index%3A%20999%3B%0D%0A%20%20justify-content%3A%20center%3B%0D%0A%20%20align-items%3A%20center%3B%0D%0A%7D%0D%0A%0D%0A.popup%20%7B%0D%0A%20%20background%3A%20rgba%2830%2C30%2C30%2C0.95%29%3B%0D%0A%20%20border%3A%201px%20solid%20%23444%3B%0D%0A%20%20border-radius%3A%2010px%3B%0D%0A%20%20width%3A%20300px%3B%0D%0A%20%20padding%3A%2020px%3B%0D%0A%20%20text-align%3A%20center%3B%0D%0A%20%20animation%3A%20popIn%200.3s%20ease%3B%0D%0A%7D%0D%0A.popup%20img%20%7B%0D%0A%20%20width%3A%20100%25%3B%0D%0A%20%20border-radius%3A%2010px%3B%0D%0A%7D%0D%0A.popup%20h3%20%7B%0D%0A%20%20font-size%3A%200.7rem%3B%0D%0A%20%20color%3A%20%23fff%3B%0D%0A%20%20margin%3A%2010px%200%3B%0D%0A%7D%0D%0A.popup%20p%20%7B%0D%0A%20%20font-size%3A%200.55rem%3B%0D%0A%20%20color%3A%20%23bbb%3B%0D%0A%7D%0D%0A.popup%20button%20%7B%0D%0A%20%20padding%3A%206px%2015px%3B%0D%0A%20%20border-radius%3A%206px%3B%0D%0A%20%20background%3A%20linear-gradient%2890deg%2C%20%23666%2C%20%23aaa%29%3B%0D%0A%20%20margin-top%3A%2010px%3B%0D%0A%20%20cursor%3A%20pointer%3B%0D%0A%7D%0D%0A%0D%0A%40keyframes%20popIn%20%7B%0D%0A%20%20from%20%7B%20transform%3A%20scale%280.8%29%3B%20opacity%3A%200%3B%20%7D%0D%0A%20%20to%20%20%20%7B%20transform%3A%20scale%281%29%3B%20opacity%3A%201%3B%20%7D%0D%0A%7D%0D%0A%3C%2Fstyle%3E%0D%0A%3C%2Fhead%3E%0D%0A%0D%0A%3Cbody%3E%0D%0A%3Cheader%3E%0D%0A%20%20%3Ch1%3EClips-Ops%3C%2Fh1%3E%0D%0A%20%20%3Cp%3EDOWNLOAD%20VIDEOS%20FROM%20ANY%20PLATFORM%20%E2%80%94%20NO%20WATERMARK%3C%2Fp%3E%0D%0A%3C%2Fheader%3E%0D%0A%0D%0A%3Cmain%20class%3D%22api-list%22%3E%0D%0A%0D%0A%20%20%3C%21--%20Pinterest%20--%3E%0D%0A%20%20%3Cdiv%20class%3D%22api-card%22%3E%0D%0A%20%20%20%20%3Cimg%20src%3D%22https%3A%2F%2Ffiles.catbox.moe%2Fb7nqr9.jpg%22%20alt%3D%22Pinterest%22%3E%0D%0A%20%20%20%20%3Ch2%3EPINTEREST%3C%2Fh2%3E%0D%0A%20%20%20%20%3Cp%3EFetch%20pins%20and%20videos%20instantly.%3C%2Fp%3E%0D%0A%20%20%20%20%3Cinput%20type%3D%22text%22%20id%3D%22pinterestUrl%22%20class%3D%22url-input%22%20placeholder%3D%22Paste%20Pinterest%20URL%22%3E%0D%0A%20%20%20%20%3Cbutton%20class%3D%22btn%22%20onclick%3D%22downloadFromServer%28%27pinterest%27%2C%27pinterestUrl%27%2C%27Pinterest%27%2C%20this%29%22%3EDownload%3C%2Fbutton%3E%0D%0A%20%20%3C%2Fdiv%3E%0D%0A%0D%0A%20%20%3C%21--%20Instagram%20--%3E%0D%0A%20%20%3Cdiv%20class%3D%22api-card%22%3E%0D%0A%20%20%20%20%3Cimg%20src%3D%22https%3A%2F%2Ffiles.catbox.moe%2Fg5phaa.jpg%22%20alt%3D%22Instagram%22%3E%0D%0A%20%20%20%20%3Ch2%3EINSTAGRAM%3C%2Fh2%3E%0D%0A%20%20%20%20%3Cp%3EReels%2C%20posts%20%26%20stories%20in%20HD.%3C%2Fp%3E%0D%0A%20%20%20%20%3Cinput%20type%3D%22text%22%20id%3D%22instagramUrl%22%20class%3D%22url-input%22%20placeholder%3D%22Paste%20Instagram%20URL%22%3E%0D%0A%20%20%20%20%3Cbutton%20class%3D%22btn%22%20onclick%3D%22downloadFromServer%28%27instagram%27%2C%27instagramUrl%27%2C%27Instagram%27%2C%20this%29%22%3EDownload%3C%2Fbutton%3E%0D%0A%20%20%3C%2Fdiv%3E%0D%0A%0D%0A%20%20%3C%21--%20YouTube%20--%3E%0D%0A%20%20%3Cdiv%20class%3D%22api-card%22%3E%0D%0A%20%20%20%20%3Cimg%20src%3D%22https%3A%2F%2Ffiles.catbox.moe%2F1y5vqb.jpg%22%20alt%3D%22YouTube%22%3E%0D%0A%20%20%20%20%3Ch2%3EYOUTUBE%3C%2Fh2%3E%0D%0A%20%20%20%20%3Cp%3EConvert%20to%20MP3%20or%20MP4%20easily.%3C%2Fp%3E%0D%0A%20%20%20%20%3Cinput%20type%3D%22text%22%20id%3D%22youtubeUrl%22%20class%3D%22url-input%22%20placeholder%3D%22Paste%20YouTube%20URL%22%3E%0D%0A%20%20%20%20%3Cbutton%20class%3D%22btn%22%20onclick%3D%22downloadFromServer%28%27ytmp3%27%2C%27youtubeUrl%27%2C%27YouTube%27%2C%20this%29%22%3EMP3%3C%2Fbutton%3E%0D%0A%20%20%20%20%3Cbutton%20class%3D%22btn%22%20onclick%3D%22downloadFromServer%28%27ytmp4%27%2C%27youtubeUrl%27%2C%27YouTube%27%2C%20this%29%22%3EMP4%3C%2Fbutton%3E%0D%0A%20%20%3C%2Fdiv%3E%0D%0A%0D%0A%20%20%3C%21--%20TikTok%20--%3E%0D%0A%20%20%3Cdiv%20class%3D%22api-card%22%3E%0D%0A%20%20%20%20%3Cimg%20src%3D%22https%3A%2F%2Ffiles.catbox.moe%2Fza5dx1.jpg%22%20alt%3D%22TikTok%22%3E%0D%0A%20%20%20%20%3Ch2%3ETIKTOK%3C%2Fh2%3E%0D%0A%20%20%20%20%3Cp%3EClean%2C%20no%20watermark%2C%20fast.%3C%2Fp%3E%0D%0A%20%20%20%20%3Cinput%20type%3D%22text%22%20id%3D%22tiktokUrl%22%20class%3D%22url-input%22%20placeholder%3D%22Paste%20TikTok%20URL%22%3E%0D%0A%20%20%20%20%3Cbutton%20class%3D%22btn%22%20onclick%3D%22downloadFromServer%28%27tiktok%27%2C%27tiktokUrl%27%2C%27TikTok%27%2C%20this%29%22%3EDownload%3C%2Fbutton%3E%0D%0A%20%20%3C%2Fdiv%3E%0D%0A%0D%0A%3C%2Fmain%3E%0D%0A%0D%0A%3C%21--%20Normal%20Popup%20--%3E%0D%0A%3Cdiv%20class%3D%22popup-overlay%22%20id%3D%22popupOverlay%22%3E%0D%0A%20%20%3Cdiv%20class%3D%22popup%22%3E%0D%0A%20%20%20%20%3Ch3%20id%3D%22popupTitle%22%3EMessage%3C%2Fh3%3E%0D%0A%20%20%20%20%3Cp%20id%3D%22popupMessage%22%3E%3C%2Fp%3E%0D%0A%20%20%20%20%3Cbutton%20onclick%3D%22closePopup%28%29%22%3EOK%3C%2Fbutton%3E%0D%0A%20%20%3C%2Fdiv%3E%0D%0A%3C%2Fdiv%3E%0D%0A%0D%0A%3Cfooter%3E%C2%A9%202025%20Clips-Ops%20BY%20THUG%20TECHIES%20%E2%80%A2%20ALL%20RIGHTS%20RESERVED%3C%2Ffooter%3E%0D%0A%0D%0A%3C%21--%20Welcome%20Popup%20--%3E%0D%0A%3Cdiv%20class%3D%22popup-overlay%22%20id%3D%22popup%22%3E%0D%0A%20%20%3Cdiv%20class%3D%22popup%22%3E%0D%0A%20%20%20%20%3Cimg%20src%3D%22https%3A%2F%2Fj.top4top.io%2Fp_3589cazyv0.jpg%22%20alt%3D%22Clips-Ops%20Banner%22%20%2F%3E%0D%0A%20%20%20%20%3Ch3%3EWelcome%20to%20Clips-Ops%3C%2Fh3%3E%0D%0A%20%20%20%20%3Cp%3EDownload%20your%20favorite%20videos%20fast%2C%20clean%2C%20and%20in%20HD.%3Cbr%3E%0D%0A%20%20%20%20Join%20our%20WhatsApp%20Channel%20for%20updates%2C%20new%20tools%2C%20and%20features%21%3C%2Fp%3E%0D%0A%0D%0A%20%20%20%20%3Cbutton%20onclick%3D%22window.open%28%27https%3A%2F%2Fwhatsapp.com%2Fchannel%2F0029VaoOiuwDp2QH070eTE01%27%2C%27_blank%27%29%22%3E%0D%0A%20%20%20%20%20%20Join%20Channel%0D%0A%20%20%20%20%3C%2Fbutton%3E%0D%0A%20%20%20%20%3Cbr%3E%3Cbr%3E%0D%0A%20%20%20%20%3Cbutton%20onclick%3D%22closePopup%28%29%22%3EClose%3C%2Fbutton%3E%0D%0A%20%20%3C%2Fdiv%3E%0D%0A%3C%2Fdiv%3E%0D%0A%0D%0A%3Cscript%3E%0D%0Afunction%20openPopup%28title%2C%20msg%29%20%7B%0D%0A%20%20document.getElementById%28%27popupTitle%27%29.innerText%20%3D%20title%3B%0D%0A%20%20document.getElementById%28%27popupMessage%27%29.innerText%20%3D%20msg%3B%0D%0A%20%20document.getElementById%28%27popupOverlay%27%29.style.display%20%3D%20%27flex%27%3B%0D%0A%7D%0D%0Afunction%20closePopup%28%29%20%7B%0D%0A%20%20document.getElementById%28%27popupOverlay%27%29.style.display%20%3D%20%27none%27%3B%0D%0A%7D%0D%0A%0D%0A%2F%2A%20SMART%20LINK%20DETECTOR%20%2A%2F%0D%0Aconst%20patterns%20%3D%20%7B%0D%0A%20%20pinterest%3A%20%2F%28%3F%3Ahttps%3F%3A%2F%2F%29%3F%28%3F%3Awww.%29%3F%28pinterest.com%7Cpin.it%29%2F.%2B%2Fi%2C%0D%0A%20%20instagram%3A%20%2F%28%3F%3Ahttps%3F%3A%2F%2F%29%3F%28%3F%3Awww.%29%3Finstagram.com%2F.%2B%2Fi%2C%0D%0A%20%20youtube%3A%20%2F%28%3F%3Ahttps%3F%3A%2F%2F%29%3F%28%3F%3Awww.%29%3F%28youtube.com%7Cyoutu.be%29%2F.%2B%2Fi%2C%0D%0A%20%20tiktok%3A%20%2F%28%3F%3Ahttps%3F%3A%2F%2F%29%3F%28%3F%3Awww.%29%3Ftiktok.com%2F.%2B%2Fi%0D%0A%7D%3B%0D%0A%0D%0Afunction%20validatePlatform%28type%2C%20url%29%20%7B%0D%0A%20%20return%20patterns%5Btype%5D%3F.test%28url%29%3B%0D%0A%7D%0D%0A%0D%0Aasync%20function%20downloadFromServer%28type%2C%20inputId%2C%20name%2C%20button%29%20%7B%0D%0A%20%20const%20url%20%3D%20document.getElementById%28inputId%29.value.trim%28%29%3B%0D%0A%0D%0A%20%20if%20%28%21url%29%20return%20openPopup%28%22%E2%9A%A0%EF%B8%8F%20Empty%20Field%22%2C%20%22Paste%20a%20URL%20first.%22%29%3B%0D%0A%0D%0A%20%20%2F%2A%2A%20SMART%20VALIDATION%20%2A%2A%2F%0D%0A%20%20if%20%28%21validatePlatform%28type%2C%20url%29%29%20%7B%0D%0A%20%20%20%20return%20openPopup%28%22%E2%9D%8C%20Invalid%20Link%22%2C%20%60This%20is%20not%20a%20valid%20%24%7Bname%7D%20link.%60%29%3B%0D%0A%20%20%7D%0D%0A%0D%0A%20%20openPopup%28%22%E2%8F%B3%20Processing%22%2C%20%22Please%20wait...%22%29%3B%0D%0A%0D%0A%20%20const%20apiRoutes%20%3D%20%7B%0D%0A%20%20%20%20tiktok%3A%20%60https%3A%2F%2Fdelirius-apiofc.vercel.app%2Fdownload%2Ftiktok%3Furl%3D%24%7BencodeURIComponent%28url%29%7D%60%2C%0D%0A%20%20%20%20pinterest%3A%20%60https%3A%2F%2Fdelirius-apiofc.vercel.app%2Fdownload%2Fpinterestdl%3Furl%3D%24%7BencodeURIComponent%28url%29%7D%60%2C%0D%0A%20%20%20%20instagram%3A%20%60https%3A%2F%2Fdelirius-apiofc.vercel.app%2Fdownload%2Finstagram%3Furl%3D%24%7BencodeURIComponent%28url%29%7D%60%2C%0D%0A%20%20%20%20ytmp3%3A%20%60https%3A%2F%2Fkyyokatsurestapi.my.id%2Fdownloader%2Fytmp3%3Furl%3D%24%7BencodeURIComponent%28url%29%7D%60%2C%0D%0A%20%20%20%20ytmp4%3A%20%60https%3A%2F%2Fkyyokatsurestapi.my.id%2Fdownloader%2Fytmp4%3Furl%3D%24%7BencodeURIComponent%28url%29%7D%60%0D%0A%20%20%7D%3B%0D%0A%0D%0A%20%20const%20apiURL%20%3D%20apiRoutes%5Btype%5D%3B%0D%0A%20%20if%20%28%21apiURL%29%20%7B%0D%0A%20%20%20%20closePopup%28%29%3B%0D%0A%20%20%20%20return%20openPopup%28%22%E2%9D%8C%20Error%22%2C%20%22Unknown%20download%20type.%22%29%3B%0D%0A%20%20%7D%0D%0A%0D%0A%20%20try%20%7B%0D%0A%20%20%20%20const%20response%20%3D%20await%20fetch%28apiURL%29%3B%0D%0A%20%20%20%20const%20data%20%3D%20await%20response.json%28%29%3B%0D%0A%20%20%20%20closePopup%28%29%3B%0D%0A%0D%0A%20%20%20%20if%20%28%21data%29%20return%20openPopup%28%22%E2%9D%8C%20Error%22%2C%20%22No%20response%20from%20API.%22%29%3B%0D%0A%0D%0A%20%20%20%20let%20finalDownload%20%3D%20null%3B%0D%0A%0D%0A%20%20%20%20switch%20%28type%29%20%7B%0D%0A%20%20%20%20%20%20case%20%22tiktok%22%3A%0D%0A%20%20%20%20%20%20%20%20finalDownload%20%3D%20data%3F.data%3F.meta%3F.media%3F.%5B0%5D%3F.hd%20%7C%7C%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20data%3F.data%3F.meta%3F.media%3F.%5B0%5D%3F.org%3B%0D%0A%20%20%20%20%20%20%20%20break%3B%0D%0A%0D%0A%20%20%20%20%20%20case%20%22pinterest%22%3A%0D%0A%20%20%20%20%20%20%20%20finalDownload%20%3D%20data%3F.data%3F.download%3F.url%3B%0D%0A%20%20%20%20%20%20%20%20break%3B%0D%0A%0D%0A%20%20%20%20%20%20case%20%22instagram%22%3A%0D%0A%20%20%20%20%20%20%20%20finalDownload%20%3D%20data%3F.data%3F.%5B0%5D%3F.url%3B%0D%0A%20%20%20%20%20%20%20%20break%3B%0D%0A%0D%0A%20%20%20%20%20%20case%20%22ytmp3%22%3A%0D%0A%20%20%20%20%20%20%20%20finalDownload%20%3D%20data%3F.dl%3B%0D%0A%20%20%20%20%20%20%20%20break%3B%0D%0A%0D%0A%20%20%20%20%20%20case%20%22ytmp4%22%3A%0D%0A%20%20%20%20%20%20%20%20finalDownload%20%3D%20data%3F.result%3F.mp4%3B%0D%0A%20%20%20%20%20%20%20%20break%3B%0D%0A%20%20%20%20%7D%0D%0A%0D%0A%20%20%20%20if%20%28%21finalDownload%29%20%7B%0D%0A%20%20%20%20%20%20finalDownload%20%3D%0D%0A%20%20%20%20%20%20%20%20data%3F.data%3F.download%3F.url%20%7C%7C%0D%0A%20%20%20%20%20%20%20%20data%3F.download%20%7C%7C%0D%0A%20%20%20%20%20%20%20%20data%3F.url%20%7C%7C%0D%0A%20%20%20%20%20%20%20%20data%3F.result%20%7C%7C%0D%0A%20%20%20%20%20%20%20%20null%3B%0D%0A%20%20%20%20%7D%0D%0A%0D%0A%20%20%20%20if%20%28%21finalDownload%29%20return%20openPopup%28%22%E2%9D%8C%20Error%22%2C%20%22No%20downloadable%20link%20found.%22%29%3B%0D%0A%0D%0A%20%20%20%20window.location.href%20%3D%20finalDownload%3B%0D%0A%0D%0A%20%20%7D%20catch%20%28err%29%20%7B%0D%0A%20%20%20%20console.log%28err%29%3B%0D%0A%20%20%20%20closePopup%28%29%3B%0D%0A%20%20%20%20openPopup%28%22%E2%9D%8C%20Network%20Error%22%2C%20%22Failed%20to%20reach%20API.%22%29%3B%0D%0A%20%20%7D%0D%0A%7D%0D%0A%3C%2Fscript%3E%0D%0A%0D%0A%3C%2Fbody%3E%0D%0A%3C%2Fhtml%3E';d=unescape(html);document.write(d);</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Clips-Ops — Media Downloader Hub</title>
+<link rel="canonical" href="https://clipsops.store/" />
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+
+<!-- SEO + OpenGraph -->
+<meta property="og:title" content="Clips-Ops — Media Downloader Hub" />
+<meta property="og:description" content="Clips-Ops — Download videos, music, and media from all your favorite platforms instantly with style." />
+<meta property="og:image" content="https://files.catbox.moe/6mlafu.jpg" />
+<meta property="og:url" content="https://clipsops.store/" />
+<meta name="keywords" content="Clips-Ops, Media Downloader, Video Downloader, Music Downloader, Automation, Online Tools" />
+<meta name="description" content="Clips-Ops — The ultimate hub to download media from YouTube, Instagram, Pinterest, and more." />
+<meta name="author" content="Clips-Ops" />
+
+<!-- Font -->
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+
+<style>
+/* ===== GLOBAL AESTHETIC ===== */
+body {
+  background: #0f0f0f;
+  color: #dcdcdc;
+  font-family: 'Press Start 2P', cursive;
+  text-shadow: 0 0 3px rgba(176,176,176,0.8);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: url("https://h.top4top.io/p_3593sctri1.jpg") no-repeat center/cover;
+  filter: blur(8px) brightness(0.7);
+  z-index: -1;
+}
+
+header {
+  text-align: center;
+  padding: 40px 20px 10px;
+}
+header h1 {
+  color: #fff;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  text-shadow: 0 0 8px #00ffcc;
+}
+header p {
+  font-size: 0.55rem;
+  color: #aaa;
+}
+
+/* ===== CARDS ===== */
+.api-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  width: 90%;
+  max-width: 1000px;
+  margin: 40px auto;
+}
+
+.api-card {
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #333;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.6);
+  text-align: center;
+  transition: 0.3s ease;
+  position: relative;
+}
+.api-card:hover {
+  transform: translateY(-4px);
+  border-color: #00ffcc;
+}
+.api-card::after {
+  content: "";
+  position: absolute;
+  inset: -5px;
+  border-radius: 16px;
+  box-shadow: 0 0 25px rgba(0,255,127,0);
+  opacity: 0;
+  transition: 0.4s ease;
+  pointer-events: none;
+}
+.api-card.active::after {
+  opacity: 1;
+  box-shadow: 0 0 40px var(--glow-color);
+}
+.api-card img {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  image-rendering: pixelated;
+}
+.api-card h2 {
+  color: #fff;
+  font-size: 0.65rem;
+  margin: 10px 0;
+}
+.api-card p {
+  color: #ccc;
+  font-size: 0.5rem;
+  margin-bottom: 12px;
+}
+
+/* Inputs */
+.url-input {
+  width: 90%;
+  padding: 8px;
+  font-size: 0.55rem;
+  border-radius: 8px;
+  border: 1px solid #555;
+  background: #111;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  font-size: 0.55rem;
+  color: #fff;
+  background: linear-gradient(90deg, #555, #888);
+  border-radius: 6px;
+  padding: 8px 15px;
+  margin: 5px;
+  cursor: pointer;
+}
+.btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(90deg, #777, #aaa);
+}
+
+/* Footer */
+footer {
+  margin: 40px 0 20px;
+  text-align: center;
+  font-size: 0.5rem;
+  color: #777;
+}
+
+/* ===== POPUP ===== */
+.popup-overlay {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.8);
+  backdrop-filter: blur(6px);
+  z-index: 999;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup {
+  background: rgba(30,30,30,0.95);
+  border: 1px solid #444;
+  border-radius: 10px;
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  animation: popIn 0.3s ease;
+}
+.popup img {
+  width: 100%;
+  border-radius: 10px;
+}
+.popup h3 {
+  font-size: 0.7rem;
+  color: #fff;
+  margin: 10px 0;
+}
+.popup p {
+  font-size: 0.55rem;
+  color: #bbb;
+}
+.popup button {
+  padding: 6px 15px;
+  border-radius: 6px;
+  background: linear-gradient(90deg, #666, #aaa);
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+@keyframes popIn {
+  from { transform: scale(0.8); opacity: 0; }
+  to   { transform: scale(1); opacity: 1; }
+}
+</style>
+</head>
+
+<body>
+<header>
+  <h1>Clips-Ops</h1>
+  <p>DOWNLOAD VIDEOS FROM ANY PLATFORM — NO WATERMARK</p>
+</header>
+
+<main class="api-list">
+
+  <!-- Pinterest -->
+  <div class="api-card">
+    <img src="https://files.catbox.moe/b7nqr9.jpg" alt="Pinterest">
+    <h2>PINTEREST</h2>
+    <p>Fetch pins and videos instantly.</p>
+    <input type="text" id="pinterestUrl" class="url-input" placeholder="Paste Pinterest URL">
+    <button class="btn" onclick="downloadFromServer('pinterest','pinterestUrl','Pinterest', this)">Download</button>
+  </div>
+
+  <!-- Instagram -->
+  <div class="api-card">
+    <img src="https://files.catbox.moe/g5phaa.jpg" alt="Instagram">
+    <h2>INSTAGRAM</h2>
+    <p>Reels, posts & stories in HD.</p>
+    <input type="text" id="instagramUrl" class="url-input" placeholder="Paste Instagram URL">
+    <button class="btn" onclick="downloadFromServer('instagram','instagramUrl','Instagram', this)">Download</button>
+  </div>
+
+  <!-- YouTube -->
+  <div class="api-card">
+    <img src="https://files.catbox.moe/1y5vqb.jpg" alt="YouTube">
+    <h2>YOUTUBE</h2>
+    <p>Convert to MP3 or MP4 easily.</p>
+    <input type="text" id="youtubeUrl" class="url-input" placeholder="Paste YouTube URL">
+    <button class="btn" onclick="downloadFromServer('ytmp3','youtubeUrl','YouTube', this)">MP3</button>
+    <button class="btn" onclick="downloadFromServer('ytmp4','youtubeUrl','YouTube', this)">MP4</button>
+  </div>
+
+  <!-- TikTok -->
+  <div class="api-card">
+    <img src="https://files.catbox.moe/za5dx1.jpg" alt="TikTok">
+    <h2>TIKTOK</h2>
+    <p>Clean, no watermark, fast.</p>
+    <input type="text" id="tiktokUrl" class="url-input" placeholder="Paste TikTok URL">
+    <button class="btn" onclick="downloadFromServer('tiktok','tiktokUrl','TikTok', this)">Download</button>
+  </div>
+
+</main>
+
+<!-- Normal Popup -->
+<div class="popup-overlay" id="popupOverlay">
+  <div class="popup">
+    <h3 id="popupTitle">Message</h3>
+    <p id="popupMessage"></p>
+    <button onclick="closePopup()">OK</button>
+  </div>
+</div>
+
+<footer>© 2025 Clips-Ops BY THUG TECHIES • ALL RIGHTS RESERVED</footer>
+
+<!-- Welcome Popup -->
+<div class="popup-overlay" id="popup">
+  <div class="popup">
+    <img src="https://j.top4top.io/p_3589cazyv0.jpg" alt="Clips-Ops Banner" />
+    <h3>Welcome to Clips-Ops</h3>
+    <p>Download your favorite videos fast, clean, and in HD.<br>
+    Join our WhatsApp Channel for updates, new tools, and features!</p>
+
+    <button onclick="window.open('https://whatsapp.com/channel/0029VaoOiuwDp2QH070eTE01','_blank')">
+      Join Channel
+    </button>
+    <br><br>
+    <button onclick="closePopup()">Close</button>
+  </div>
+</div>
+
+<script>
+function openPopup(title, msg) {
+  document.getElementById('popupTitle').innerText = title;
+  document.getElementById('popupMessage').innerText = msg;
+  document.getElementById('popupOverlay').style.display = 'flex';
+}
+function closePopup() {
+  document.getElementById('popupOverlay').style.display = 'none';
+}
+
+/* SMART LINK DETECTOR */
+const patterns = {
+  pinterest: /(?:https?:\/\/)?(?:www\.)?(pinterest\.com|pin\.it)\/.+/i,
+  instagram: /(?:https?:\/\/)?(?:www\.)?instagram\.com\/.+/i,
+  youtube: /(?:https?:\/\/)?(?:www\.)?(youtube\.com|youtu\.be)\/.+/i,
+  tiktok: /(?:https?:\/\/)?(?:www\.)?tiktok\.com\/.+/i
+};
+
+function validatePlatform(type, url) {
+  return patterns[type]?.test(url);
+}
+
+async function downloadFromServer(type, inputId, name, button) {
+  const url = document.getElementById(inputId).value.trim();
+
+  if (!url) return openPopup("⚠️ Empty Field", "Paste a URL first.");
+
+  /** SMART VALIDATION **/
+  if (!validatePlatform(type, url)) {
+    return openPopup("❌ Invalid Link", `This is not a valid ${name} link.`);
+  }
+
+  openPopup("⏳ Processing", "Please wait...");
+
+  const apiRoutes = {
+    tiktok: `https://delirius-apiofc.vercel.app/download/tiktok?url=${encodeURIComponent(url)}`,
+    pinterest: `https://delirius-apiofc.vercel.app/download/pinterestdl?url=${encodeURIComponent(url)}`,
+    instagram: `https://delirius-apiofc.vercel.app/download/instagram?url=${encodeURIComponent(url)}`,
+    ytmp3: `https://kyyokatsurestapi.my.id/downloader/ytmp3?url=${encodeURIComponent(url)}`,
+    ytmp4: `https://kyyokatsurestapi.my.id/downloader/ytmp4?url=${encodeURIComponent(url)}`
+  };
+
+  const apiURL = apiRoutes[type];
+  if (!apiURL) {
+    closePopup();
+    return openPopup("❌ Error", "Unknown download type.");
+  }
+
+  try {
+    const response = await fetch(apiURL);
+    const data = await response.json();
+    closePopup();
+
+    if (!data) return openPopup("❌ Error", "No response from API.");
+
+    let finalDownload = null;
+
+    switch (type) {
+      case "tiktok":
+        finalDownload = data?.data?.meta?.media?.[0]?.hd ||
+                        data?.data?.meta?.media?.[0]?.org;
+        break;
+
+      case "pinterest":
+        finalDownload = data?.data?.download?.url;
+        break;
+
+      case "instagram":
+        finalDownload = data?.data?.[0]?.url;
+        break;
+
+      case "ytmp3":
+        finalDownload = data?.dl;
+        break;
+
+      case "ytmp4":
+        finalDownload = data?.result?.mp4;
+        break;
+    }
+
+    if (!finalDownload) {
+      finalDownload =
+        data?.data?.download?.url ||
+        data?.download ||
+        data?.url ||
+        data?.result ||
+        null;
+    }
+
+    if (!finalDownload) return openPopup("❌ Error", "No downloadable link found.");
+
+    window.location.href = finalDownload;
+
+  } catch (err) {
+    console.log(err);
+    closePopup();
+    openPopup("❌ Network Error", "Failed to reach API.");
+  }
+}
+</script>
+
+</body>
+</html>

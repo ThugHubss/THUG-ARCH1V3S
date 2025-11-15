@@ -1,0 +1,33 @@
+{
+  "name": "ClipsOps",
+  "version": "1.0.0",
+  "description": "ClipOps Multi Downloader API (TikTok, Pinterest, Instagram, YouTube MP3/MP4)",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "downloader",
+    "tiktok",
+    "pinterest",
+    "instagram",
+    "youtube",
+    "api",
+    "express",
+    "nodejs",
+    "video",
+    "music"
+  ],
+  "author": "Thug Techies",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}

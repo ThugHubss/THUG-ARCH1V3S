@@ -336,7 +336,7 @@
       threads: /(?:https?:\/\/)?(?:www\.)?threads\.com\/.+/i,
       tiktok: /(?:https?:\/\/)?(?:www\.)?tiktok\.com\/.+/i,
       twitter: /(?:https?:\/\/)?(?:www\.)?(?:twitter\.com|x\.com)\/.+/i,
-      youtube: /^https?:\/\/(www\.)?(youtube\.com\/(watch\?v=|shorts\/)[\w-]+|youtu\.be\/[\w-]+)(\?.*)?$/i
+      youtube: /^(https?:\/\/)?((www\.)?youtube\.com\/(watch\?v=|shorts\/|embed\/)[A-Za-z0-9_-]+|youtu\.be\/[A-Za-z0-9_-]+)([?&][A-Za-z0-9=_-]+)*$/i
     };
 
     function validatePlatform(type, url) {

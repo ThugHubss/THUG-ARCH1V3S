@@ -6,12 +6,12 @@
   <title>INSTAFETCH • 萨格科技</title>    
   <link rel="icon" href="https://i.ibb.co/fdfGgTZY/file-100.jpg" type="image/jpeg" />  
   <link rel="canonical" href="https://clipsops.store/" />    
-  <!-- OpenGraph / SEO -->    
+
   <meta property="og:title" content="INSTAFETCH — Media Downloader Hub" />  
   <meta property="og:description" content="Download videos, music, and media from YouTube, Instagram, TikTok, Spotify and more — fast & clean." />  
   <meta property="og:image" content="https://i.ibb.co/60vszfKg/file-98.jpg" />  
   <meta property="og:url" content="https://clipsops.store/" />    
-  <!-- Fonts -->    
+
   <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap" rel="stylesheet" />  
   <link href="https://fonts.cdnfonts.com/css/minecraftia" rel="stylesheet" />    
 
@@ -23,307 +23,129 @@
     }  
   
     body {  
-      background: #0d0015;          /* very dark purple-black base */
-      color: #e0d4ff;               /* light purple-ish text */
+      background: #0a0014;  
+      color: #d8b4fe;  
       font-family: 'Source Code Pro', monospace;  
       line-height: 1.6;  
       min-height: 100vh;  
       position: relative;  
       overflow-x: hidden;  
     }  
-  
-    /* ── Floating Purple Bubbles ──────────────────────────────────────── */
+
+    /* Purple Floating Bubbles */
     .bubbles {
       position: fixed;
       inset: 0;
-      width: 100%;
-      height: 100%;
       overflow: hidden;
-      pointer-events: none;
       z-index: -10;
+      pointer-events: none;
     }
 
     .bubbles span {
       position: absolute;
-      bottom: -180px;
-      background: #a855f7;
+      bottom: -120px;
+      width: 22px;
+      height: 22px;
+      background: rgba(168, 85, 247, 0.5);
       border-radius: 50%;
-      pointer-events: none;
       animation: rise 18s linear infinite;
-      opacity: 0.38;
-      box-shadow: 0 0 18px #c084fc55;
+      box-shadow: 0 0 25px rgba(168, 85, 247, 0.9);
     }
 
     .bubbles span:nth-child(even) {
-      background: #8b5cf6;
-      box-shadow: 0 0 18px #a78bfa55;
-    }
-
-    .bubbles span:nth-child(3n) {
-      background: #c084fc;
-      opacity: 0.28;
+      background: rgba(139, 92, 246, 0.4);
     }
 
     @keyframes rise {
-      0% {
-        transform: translateY(0) scale(0.1) translateX(0);
-      }
-      100% {
-        transform: translateY(-110vh) scale(1.1) translateX(30px);
-      }
+      0% { transform: translateY(0) scale(0.5); opacity: 0; }
+      50% { opacity: 0.7; }
+      100% { transform: translateY(-120vh) scale(1); opacity: 0; }
     }
 
     .top-bar {  
-      background: #0f001a;
-      border-bottom: 1px solid #3a1a5c;
-      padding: 12px 20px;
-      display: flex;
-      align-items: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
+      background: #0a0014;  
+      border-bottom: 1px solid #3b0764;  
+      padding: 12px 20px;  
+      display: flex;  
+      align-items: center;  
+      position: sticky;  
+      top: 0;  
+      z-index: 1000;  
     }  
   
     .hacker-title {  
-      color: #d8b4fe;                /* purple-white */
-      font-size: 1.55rem;
-      font-weight: bold;
-      letter-spacing: 2.5px;
-      text-shadow: 0 0 12px #c084fc80, 0 0 24px #a855f760;
+      color: #c084fc;  
+      font-size: 1.55rem;  
+      font-weight: bold;  
+      letter-spacing: 2.5px;  
+      text-shadow: 0 0 12px rgba(168,85,247,0.8);  
     }  
-  
-    .welcome-container {  
-      text-align: center;
-      margin: 0 auto 70px;
-      max-width: 820px;
-      position: relative;
-    }  
-  
+
     .welcome {  
-      color: #e9d5ff;
-      font-size: 1.22rem;
-      white-space: pre-line;
-      line-height: 1.85;
-      opacity: 0.94;
-      text-shadow: 0 0 10px #c084fc60;
-      display: inline-block;
-    }  
-  
+      color: #e9d5ff;  
+      text-shadow: 0 0 8px rgba(168,85,247,0.6);  
+    }
+
     .cursor {  
-      display: inline-block;
-      width: 10px;
-      height: 1.2em;
-      background: #c084fc;
-      margin-left: 3px;
-      vertical-align: middle;
-      animation: blink 0.9s step-end infinite;
-    }  
-  
-    @keyframes blink {  
-      from, to { opacity: 1; }  
-      50%      { opacity: 0; }  
-    }  
-  
+      background: #a855f7;  
+    }
+
     .module-underline {  
-      width: 0;
-      height: 2px;
-      background: #c084fc;
-      margin: 12px auto 0;
-      box-shadow: 0 0 14px #d8b4fe70;
-      transition: width 1.2s ease-out;
-    }  
-  
-    .module-underline.active {  
-      width: 60%;
-    }  
-  
-    .container {  
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 30px 15px;
-      position: relative;
-      z-index: 1;
-    }  
-  
-    .header {  
-      position: relative;
-      text-align: center;
-      margin: 40px 0 60px;
-    }  
-  
-    .header img {  
-      max-width: 380px;
-      border-radius: 10px;
-      box-shadow: 0 0 35px #6d28d970;
-      image-rendering: crisp-edges;
-      filter: grayscale(25%) contrast(1.15) sepia(0.1) hue-rotate(250deg);
-    }  
-  
-    .created-by {  
-      position: absolute;
-      bottom: 14px;
-      left: 50%;
-      transform: translateX(-50%);
-      background: rgba(30,10,50,0.8);
-      color: #d8b4fe;
-      padding: 6px 20px;
-      border-radius: 6px;
-      font-weight: bold;
-      font-size: 1rem;
-      letter-spacing: 1px;
-    }  
-  
-    .api-grid {  
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-      gap: 28px;
-      margin-bottom: 60px;
-      position: relative;
-      z-index: 2;
-    }  
-  
+      background: #a855f7;  
+      box-shadow: 0 0 12px rgba(168,85,247,0.8);  
+    }
+
     .api-card {  
-      background: rgba(20, 10, 40, 0.88);
-      border: 1px solid #4c1d95;
-      border-radius: 10px;
-      padding: 24px;
-      transition: all 0.28s ease;
-      backdrop-filter: blur(5px);
+      background: rgba(20, 5, 35, 0.9);  
+      border: 1px solid #3b0764;  
     }  
-  
+
     .api-card:hover {  
-      border-color: #8b5cf6;
-      transform: translateY(-4px);
-      box-shadow: 0 10px 30px #7c3aed60;
+      border-color: #a855f7;  
+      box-shadow: 0 8px 30px rgba(168,85,247,0.4);  
     }  
-  
-    .api-card img {  
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 8px;
-      margin-bottom: 18px;
-      filter: grayscale(35%) brightness(1.05);
-    }  
-  
+
     .api-card h2 {  
-      color: #e9d5ff;
-      font-size: 1.45rem;
-      margin-bottom: 8px;
-      letter-spacing: 1px;
-      text-shadow: 0 0 8px #a855f780;
-      min-height: 1.6em;
+      color: #d8b4fe;  
     }  
-  
+
     .api-card p {  
-      color: #d1b3ff;
-      font-size: 0.92rem;
-      margin-bottom: 18px;
-      min-height: 1.6em;
+      color: #c4b5fd;  
     }  
-  
-    .input-group {  
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 12px;
-    }  
-  
+
     .url-input {  
-      flex: 1;
-      min-width: 220px;
-      padding: 12px 16px;
-      background: #0f001a;
-      border: 1px solid #5b21b6;
-      border-radius: 6px;
-      color: #e0d4ff;
-      font-family: inherit;
-      font-size: 0.95rem;
+      background: #140025;  
+      border: 1px solid #3b0764;  
+      color: #e9d5ff;  
     }  
-  
+
     .btn {  
-      padding: 12px 22px;
-      background: #4c1d95;
-      color: #f3e8ff;
-      border: 1px solid #7c3aed;
-      border-radius: 6px;
-      font-weight: bold;
-      cursor: pointer;
-      transition: all 0.22s;
-      font-family: 'Minecraftia', monospace;
+      background: #6d28d9;  
+      color: #ffffff;  
+      border: 1px solid #a855f7;  
     }  
-  
+
     .btn:hover {  
-      background: #6d28d9;
-      border-color: #a78bfa;
-      transform: translateY(-1px);
-      box-shadow: 0 4px 14px #8b5cf670;
-    }  
-  
-    .popup-overlay {  
-      position: fixed;
-      inset: 0;
-      background: rgba(10, 5, 30, 0.9);
-      display: none;
-      align-items: center;
-      justify-content: center;
-      z-index: 9999;
-    }  
-  
-    .popup {  
-      background: #1a0033;
-      border: 1px solid #6d28d9;
-      border-radius: 10px;
-      padding: 28px;
-      max-width: 420px;
-      text-align: center;
-      z-index: 10000;
-    }  
-  
-    .popup h3 {  
-      color: #e9d5ff;
-      margin-bottom: 14px;
-    }  
-  
-    .popup button {  
-      margin-top: 20px;
-      padding: 10px 32px;
-      background: #4c1d95;
-      color: #e0d4ff;
-      border: 1px solid #8b5cf6;
-      border-radius: 6px;
-      cursor: pointer;
-    }  
-  
-    .popup button:hover {  
-      background: #7c3aed;
-    }  
+      background: #7c3aed;  
+      box-shadow: 0 0 15px rgba(168,85,247,0.7);  
+    }
+
   </style>  
 </head>  
 
 <body>  
 
 <div class="bubbles">
-  <span style="--i:6;"></span>
-  <span style="--i:12;"></span>
-  <span style="--i:8;"></span>
-  <span style="--i:22;"></span>
-  <span style="--i:15;"></span>
-  <span style="--i:4;"></span>
-  <span style="--i:18;"></span>
-  <span style="--i:10;"></span>
-  <span style="--i:25;"></span>
-  <span style="--i:14;"></span>
-  <span style="--i:9;"></span>
-  <span style="--i:20;"></span>
-  <span style="--i:7;"></span>
-  <span style="--i:16;"></span>
-  <span style="--i:11;"></span>
-  <span style="--i:24;"></span>
-  <span style="--i:13;"></span>
-  <span style="--i:19;"></span>
-  <span style="--i:5;"></span>
-  <span style="--i:21;"></span>
+  <span style="left:5%; animation-duration:18s;"></span>
+  <span style="left:15%; animation-duration:14s;"></span>
+  <span style="left:25%; animation-duration:20s;"></span>
+  <span style="left:35%; animation-duration:16s;"></span>
+  <span style="left:45%; animation-duration:22s;"></span>
+  <span style="left:55%; animation-duration:17s;"></span>
+  <span style="left:65%; animation-duration:19s;"></span>
+  <span style="left:75%; animation-duration:13s;"></span>
+  <span style="left:85%; animation-duration:21s;"></span>
+  <span style="left:95%; animation-duration:15s;"></span>
 </div>
 
   <!-- Top Bar with Hacker Glitch Effect (no cursor) -->  
@@ -345,32 +167,129 @@
 
     <main class="api-grid">
 
-      <!-- Apple Music -->  
-      <div class="api-card">  
-        <img src="https://i.ouim.me/i/6bff2461.jpg" alt="Apple Music">  
-        <h2>APPLE MUSIC</h2>  
-        <p>Download tracks as MP3</p>  
-        <div class="input-group">  
-          <input type="text" id="appleUrl" class="url-input" placeholder="Paste Apple Music URL">  
-          <button class="btn" onclick="downloadFromServer('apple', 'appleUrl', 'Apple Music', this)">Download</button>  
-        </div>  
-      </div>  
+  <!-- Apple Music -->  
+  <div class="api-card">  
+    <img src="https://i.ouim.me/i/6bff2461.jpg" alt="Apple Music">  
+    <h2>APPLE MUSIC</h2>  
+    <p>Download tracks as MP3</p>  
+    <div class="input-group">  
+      <input type="text" id="appleUrl" class="url-input" placeholder="Paste Apple Music URL">  
+      <button class="btn" onclick="downloadFromServer('apple', 'appleUrl', 'Apple Music', this)">Download</button>  
+    </div>  
+  </div>  
 
-      <!-- (all other cards remain exactly the same – only colors changed in CSS) -->
+  <!-- Instagram -->  
+  <div class="api-card">  
+    <img src="https://files.catbox.moe/g5phaa.jpg" alt="Instagram">  
+    <h2>INSTAGRAM</h2>  
+    <p>Reels • Posts • Stories (HD)</p>  
+    <div class="input-group">  
+      <input type="text" id="instagramUrl" class="url-input" placeholder="Paste Instagram URL">  
+      <button class="btn" onclick="downloadFromServer('instagram', 'instagramUrl', 'Instagram', this)">Download</button>  
+    </div>  
+  </div>  
 
-      <!-- YouTube -->  
-      <div class="api-card">  
-        <img src="https://files.catbox.moe/1y5vqb.jpg" alt="YouTube">  
-        <h2>YOUTUBE</h2>  
-        <p>Audio (MP3) or Video (MP4)</p>  
-        <div class="input-group">  
-          <input type="text" id="youtubeUrl" class="url-input" placeholder="Paste YouTube URL">  
-          <button class="btn" onclick="downloadFromServer('ytmp3', 'youtubeUrl', 'YouTube Audio', this)">MP3</button>  
-          <button class="btn" onclick="downloadFromServer('ytmp4', 'youtubeUrl', 'YouTube Video', this)">MP4</button>  
-        </div>  
-      </div>
+  <!-- Pinterest -->  
+  <div class="api-card">  
+    <img src="https://files.catbox.moe/b7nqr9.jpg" alt="Pinterest">  
+    <h2>PINTEREST</h2>  
+    <p>Images & video pins</p>  
+    <div class="input-group">  
+      <input type="text" id="pinterestUrl" class="url-input" placeholder="Paste Pinterest URL">  
+      <button class="btn" onclick="downloadFromServer('pinterest', 'pinterestUrl', 'Pinterest', this)">Download</button>  
+    </div>  
+  </div>  
 
-    </main>  
+  <!-- Spotify -->  
+  <div class="api-card">  
+    <img src="https://files.catbox.moe/75zc7e.jpg" alt="Spotify">  
+    <h2>SPOTIFY</h2>  
+    <p>Download tracks as MP3</p>  
+    <div class="input-group">  
+      <input type="text" id="spotifyUrl" class="url-input" placeholder="Paste Spotify Track URL">  
+      <button class="btn" onclick="downloadFromServer('spotify', 'spotifyUrl', 'Spotify', this)">Download</button>  
+    </div>  
+  </div>  
+
+  <!-- Threads -->  
+  <div class="api-card">  
+    <img src="https://files.catbox.moe/qmvn0p.jpg" alt="Threads">  
+    <h2>THREADS</h2>  
+    <p>Download thread videos</p>  
+    <div class="input-group">  
+      <input type="text" id="threadsUrl" class="url-input" placeholder="Paste Threads URL">  
+      <button class="btn" onclick="downloadFromServer('threads', 'threadsUrl', 'Threads', this)">Download</button>  
+    </div>  
+  </div>  
+
+  <!-- TikTok -->  
+  <div class="api-card">  
+    <img src="https://files.catbox.moe/za5dx1.jpg" alt="TikTok">  
+    <h2>TIKTOK</h2>  
+    <p>No watermark • HD quality</p>  
+    <div class="input-group">  
+      <input type="text" id="tiktokUrl" class="url-input" placeholder="Paste TikTok URL">  
+      <button class="btn" onclick="downloadFromServer('tiktok', 'tiktokUrl', 'TikTok', this)">Download</button>  
+    </div>  
+  </div>  
+
+  <!-- Twitter / X -->  
+  <div class="api-card">  
+    <img src="https://files.catbox.moe/numxut.jpg" alt="Twitter/X">  
+    <h2>TWITTER / X</h2>  
+    <p>Videos & GIFs from posts</p>  
+    <div class="input-group">  
+      <input type="text" id="twitterUrl" class="url-input" placeholder="Paste Twitter / X URL">  
+      <button class="btn" onclick="downloadFromServer('twitter', 'twitterUrl', 'Twitter/X', this)">Download</button>  
+    </div>  
+  </div>  
+
+  <!-- CapCut -->  
+  <div class="api-card">  
+    <img src="https://i.ibb.co/QvLss5RB/file-104.jpg" alt="CapCut">  
+    <h2>CAPCUT</h2>  
+    <p>Download videos & templates</p>  
+    <div class="input-group">  
+      <input type="text" id="capcutUrl" class="url-input" placeholder="Paste CapCut URL">  
+      <button class="btn" onclick="downloadFromServer('capcut', 'capcutUrl', 'CapCut', this)">Download</button>  
+    </div>  
+  </div>  
+
+  <!-- Facebook -->  
+  <div class="api-card">  
+    <img src="https://i.ibb.co/B280hGLK/file-103.jpg" alt="Facebook">  
+    <h2>FACEBOOK</h2>  
+    <p>Reels • Videos • Posts (HD/SD)</p>  
+    <div class="input-group">  
+      <input type="text" id="facebookUrl" class="url-input" placeholder="Paste Facebook URL">  
+      <button class="btn" onclick="downloadFromServer('facebook', 'facebookUrl', 'Facebook', this)">Download</button>  
+    </div>  
+  </div>  
+
+  <!-- MediaFire -->  
+  <div class="api-card">  
+    <img src="https://i.ibb.co/fz6dkTbb/file-102.jpg" alt="MediaFire">  
+    <h2>MEDIAFIRE</h2>  
+    <p>Download files directly</p>  
+    <div class="input-group">  
+      <input type="text" id="mediafireUrl" class="url-input" placeholder="Paste MediaFire URL">  
+      <button class="btn" onclick="downloadFromServer('mediafire', 'mediafireUrl', 'MediaFire', this)">Download</button>  
+    </div>  
+  </div>  
+
+  <!-- YouTube -->  
+  <div class="api-card">  
+    <img src="https://files.catbox.moe/1y5vqb.jpg" alt="YouTube">  
+    <h2>YOUTUBE</h2>  
+    <p>Audio (MP3) or Video (MP4)</p>  
+    <div class="input-group">  
+      <input type="text" id="youtubeUrl" class="url-input" placeholder="Paste YouTube URL">  
+      <button class="btn" onclick="downloadFromServer('ytmp3', 'youtubeUrl', 'YouTube Audio', this)">MP3</button>  
+      <button class="btn" onclick="downloadFromServer('ytmp4', 'youtubeUrl', 'YouTube Video', this)">MP4</button>  
+    </div>  
+  </div>
+
+</main>
   </div>  
 
   <!-- Popup -->  

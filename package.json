@@ -1,7 +1,7 @@
 {
-  "name": "InstaFetch",
+  "name": "THUG ARCH1V3S",
   "version": "1.0.0",
-  "description": "InstaFetch Multi Downloader API (TikTok, Pinterest, Instagram, YouTube MP3/MP4)",
+  "description": "THUG ARCH1V3S Multi Downloader API (TikTok, Pinterest, Instagram, YouTube MP3/MP4)",
   "main": "server.js",
   "type": "module",
   "scripts": {

@@ -10,13 +10,13 @@
   <meta property="og:description" content="Download videos, music, and media from YouTube, Instagram, TikTok, Spotify and more — fast & clean." />  
   <meta property="og:image" content="https://i.ibb.co/60vszfKg/file-98.jpg" />  
   <meta property="og:url" content="https://clipsops.store/" />    
-  <link href="https://fonts.googleapis.com/css2?family=Source+Code Pro:wght@400;700&display=swap" rel="stylesheet" />  
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap" rel="stylesheet" />  
   <link href="https://fonts.cdnfonts.com/css/minecraftia" rel="stylesheet" />    
 
   <style>  
 
     /* ────────────────────────────────────────────────
-       PRELOADER STYLES (added)
+       PRELOADER STYLES
     ──────────────────────────────────────────────── */
     #preloader {
       position: fixed;
@@ -28,7 +28,7 @@
       align-items: center;
       justify-content: center;
       gap: 2rem;
-      transition: opacity 0.6s ease, visibility 0.6s;
+      transition: opacity 0.7s ease 0.3s;
     }
 
     #preloader.hidden {
@@ -39,14 +39,14 @@
 
     .preload-logo {
       font-family: 'Minecraftia', monospace;
-      font-size: 9.5rem;
+      font-size: 8.8rem;
       font-weight: bold;
       color: #c084fc;
-      letter-spacing: -8px;
+      letter-spacing: -4px;
       text-shadow: 
         0 0 20px rgba(192, 132, 252, 0.7),
         0 0 40px rgba(168, 85, 247, 0.4);
-      line-height: 0.85;
+      line-height: 0.9;
     }
 
     .preload-title {
@@ -93,7 +93,6 @@
     /* ────────────────────────────────────────────────
        YOUR ORIGINAL STYLES (unchanged)
     ──────────────────────────────────────────────── */
-
     * {  
       margin: 0;  
       padding: 0;  
@@ -102,7 +101,7 @@
 
     body {  
       background: #000000;  
-      color: #d8b4fe;                /* purple text default */  
+      color: #d8b4fe;  
       font-family: 'Source Code Pro', monospace;  
       line-height: 1.6;  
       min-height: 100vh;  
@@ -110,7 +109,6 @@
       overflow-x: hidden;  
     }  
 
-    /* Keep bubbles (they are purple, but visual effect only – not "theme" in UI sense) */
     .bubbles {  
       position: fixed;  
       inset: 0;  
@@ -152,7 +150,7 @@
     }  
 
     .hacker-title {  
-      color: #c084fc;              /* purple title */  
+      color: #c084fc;  
       font-size: 1.55rem;  
       font-weight: bold;  
       letter-spacing: 2.5px;  
@@ -185,7 +183,7 @@
       left: 50%;  
       transform: translateX(-50%);  
       background: rgba(0,0,0,0.75);  
-      color: #d8b4fe;              /* purple */  
+      color: #d8b4fe;  
       padding: 6px 20px;  
       border-radius: 6px;  
       font-weight: bold;  
@@ -199,7 +197,7 @@
     }  
 
     .welcome {  
-      color: #e9d5ff;              /* light purple */  
+      color: #e9d5ff;  
       font-size: 1.22rem;  
       white-space: pre-line;  
       line-height: 1.85;  
@@ -211,7 +209,7 @@
       display: inline-block;  
       width: 10px;  
       height: 1.2em;  
-      background: #c084fc;         /* purple cursor */  
+      background: #c084fc;  
       margin-left: 3px;  
       vertical-align: middle;  
       animation: blink 0.9s step-end infinite;  
@@ -225,7 +223,7 @@
     .module-underline {  
       width: 0;  
       height: 2px;  
-      background: #444444;         /* neutral gray now */  
+      background: #444444;  
       margin: 12px auto 0;  
       box-shadow: 0 0 10px rgba(255,255,255,0.15);  
       transition: width 1.2s ease-out;  
@@ -257,14 +255,14 @@
     }  
 
     .api-card h2 {  
-      color: #d8b4fe;              /* purple */  
+      color: #d8b4fe;  
       font-size: 1.45rem;  
       margin-bottom: 8px;  
       letter-spacing: 1px;  
     }  
 
     .api-card p {  
-      color: #c4b5fd;              /* softer purple */  
+      color: #c4b5fd;  
       font-size: 0.92rem;  
       margin-bottom: 18px;  
     }  
@@ -283,13 +281,13 @@
       background: #000000;  
       border: 1px solid #2a2a2a;  
       border-radius: 6px;  
-      color: #d8b4fe;              /* purple text & placeholder */  
+      color: #d8b4fe;  
       font-family: inherit;  
       font-size: 0.95rem;  
     }  
 
     .url-input::placeholder {  
-      color: #a78bfa;              /* lighter purple placeholder */  
+      color: #a78bfa;  
       opacity: 0.7;  
     }  
 
@@ -332,7 +330,7 @@
     }  
 
     .popup h3 {  
-      color: #d8b4fe;              /* purple */  
+      color: #d8b4fe;  
       margin-bottom: 14px;  
     }  
 
@@ -358,11 +356,9 @@
 
 <body>  
 
-  <!-- ────────────────────────────────────────────────
-       PRELOADER (added - appears first, then fades out)
-  ──────────────────────────────────────────────── -->
+  <!-- PRELOADER -->
   <div id="preloader">
-    <div class="preload-logo">I</div>
+    <div class="preload-logo">I.F</div>
     <div class="preload-title">INSTAFETCH</div>
     
     <div class="preload-progress">
@@ -372,33 +368,47 @@
     <div class="preload-text">LOADING...</div>
   </div>
 
-<div class="bubbles">  
-  <span style="left:5%; animation-duration:18s;"></span>  
-  <span style="left:15%; animation-duration:14s;"></span>  
-  <span style="left:25%; animation-duration:20s;"></span>  
-  <span style="left:35%; animation-duration:16s;"></span>  
-  <span style="left:45%; animation-duration:22s;"></span>  
-  <span style="left:55%; animation-duration:17s;"></span>  
-  <span style="left:65%; animation-duration:19s;"></span>  
-  <span style="left:75%; animation-duration:13s;"></span>  
-  <span style="left:85%; animation-duration:21s;"></span>  
-  <span style="left:95%; animation-duration:15s;"></span>  
-</div>  
+  <div class="bubbles">  
+    <span style="left:5%; animation-duration:18s;"></span>  
+    <span style="left:15%; animation-duration:14s;"></span>  
+    <span style="left:25%; animation-duration:20s;"></span>  
+    <span style="left:35%; animation-duration:16s;"></span>  
+    <span style="left:45%; animation-duration:22s;"></span>  
+    <span style="left:55%; animation-duration:17s;"></span>  
+    <span style="left:65%; animation-duration:19s;"></span>  
+    <span style="left:75%; animation-duration:13s;"></span>  
+    <span style="left:85%; animation-duration:21s;"></span>  
+    <span style="left:95%; animation-duration:15s;"></span>  
+  </div>  
 
-<!-- The rest of your body content goes here (unchanged) -->
+  <!-- The rest of your page content goes here -->
 
-<script>
-// Hide preloader when everything is loaded
-window.addEventListener('load', () => {
-  const preloader = document.getElementById('preloader');
-  preloader.classList.add('hidden');
-  
-  // Optional: completely remove from DOM after fade
-  setTimeout(() => {
-    preloader.remove();
-  }, 800);
-});
-</script>
+  <script>
+  // Minimum 3.5 seconds display + smooth fade out
+  window.addEventListener('load', () => {
+    const preloader = document.getElementById('preloader');
+    
+    const minimumTime = 3500;           // 3.5 seconds
+    const startTime = Date.now();
+
+    const hidePreloader = () => {
+      const elapsed = Date.now() - startTime;
+      const remaining = minimumTime - elapsed;
+
+      if (remaining <= 0) {
+        preloader.classList.add('hidden');
+        // Remove from DOM after transition ends (cleanup)
+        setTimeout(() => {
+          preloader.remove();
+        }, 1200);
+      } else {
+        setTimeout(hidePreloader, remaining);
+      }
+    };
+
+    hidePreloader();
+  });
+  </script>
 
   <!-- Top Bar with Hacker Glitch Effect (no cursor) -->  
   <div class="top-bar">  
